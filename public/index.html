@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARKADROID</title>
+    <link rel="shortcut icon" href="src/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="src/images/ARKANOID.png" alt="arkanoid logo" class="logo">
+    <article class="container-main">
+
+        <canvas id="canvas"></canvas>
+
+        <img hidden id="sprite" src="src/images/Arkanoid Sprites.png" alt="sprites arkadroid">
+        <img hidden id="bricks" src="src/images/brincks.webp" alt="brincks arkadroid">
+
+        <div class="info">
+            <div class="info_lifes">
+                <p>lifes</p>
+                <div class="info_lifes-img">
+                    <img src="src/images/lifes.png" alt="life icon" class="life">
+                    <img src="src/images/lifes.png" alt="life icon" class="life">
+                    <img src="src/images/lifes.png" alt="life icon" class="life">
+                </div>
+            </div>
+
+            <div class="info_level">
+                <p>level</p>
+                <p id="level">1</p>
+            </div>
+
+            <div class="info_score">
+                <p>score</p>
+                <p id="score">12</p>
+            </div>
+
+            <div class="info_speed">
+                <p>speed</p>
+                <p id="speed">1</p>
+            </div>
+        </div>
+    
+    </article>
+</body>
+
+<script src="src/js/app.js" type="module"></script>
+<script src="src/js/GLOBALES.js"></script>
+</html>
